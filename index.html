@@ -1,6 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header {
+            padding: 80px 0 24px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            font-size: 18px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .apps {
+            padding: 48px 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .app-card {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background: #111;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid #222;
+            text-decoration: none;
+            color: #fff;
+            transition: border-color 0.2s;
+        }
+        .app-card:hover { border-color: #444; }
+        .app-card .icon { font-size: 48px; flex-shrink: 0; }
+        .app-card h2 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+        .app-card p { font-size: 14px; color: #888; margin: 0; }
+        .app-card .badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #000;
+            background: #fff;
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer .copy { color: #444; font-size: 13px; }
+        @media (max-width: 600px) {
+            header { padding: 48px 0 16px; }
+            header h1 { font-size: 28px; }
+            .app-card { padding: 20px; gap: 16px; }
+            .app-card .icon { font-size: 40px; }
+        }
+    </style>
+</head>
 <body>
-    <h1>Welcome to kangapps.github.io!</h1>
+    <header>
+        <div class="container">
+            <h1>JK Apps</h1>
+            <p>Simple apps, well crafted.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="apps">
+            <a class="app-card" href="/boxingtimer">
+                <div class="icon">🥊</div>
+                <div>
+                    <h2>Boxing Timer</h2>
+                    <p>Round timer for boxing, Muay Thai, and combat sports training.</p>
+                    <span class="badge">iOS</span>
+                </div>
+            </a>
+
+            <!-- Future apps go here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
 </body>
 </html>

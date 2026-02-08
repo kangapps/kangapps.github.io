@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Boxing Timer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #e0e0e0;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        header a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        header a:hover { color: #999; }
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 16px;
+        }
+        main { padding: 40px 0; }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            margin: 40px 0 16px;
+        }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 16px; color: #bbb; }
+        .contact-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .contact-card .emoji { font-size: 40px; margin-bottom: 16px; }
+        .contact-card h3 { font-size: 18px; color: #fff; margin-bottom: 8px; }
+        .contact-card a {
+            color: #58a6ff;
+            font-size: 17px;
+        }
+        .faq { margin-top: 40px; }
+        .faq-item {
+            border-bottom: 1px solid #1a1a1a;
+            padding: 20px 0;
+        }
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .faq-item p { margin-bottom: 0; font-size: 15px; }
+        a { color: #58a6ff; }
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
+        footer a:hover { color: #999; }
+        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
+        @media (max-width: 600px) {
+            header { padding: 32px 0 24px; }
+            header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/boxingtimer">&larr; Boxing Timer</a>
+            <h1>Support</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-card">
+            <div class="emoji">📧</div>
+            <h3>Get in Touch</h3>
+            <p style="color: #888; margin-bottom: 12px;">Have a question, found a bug, or want to suggest a feature?</p>
+            <a href="mailto:boxingtimer@joon.dev">boxingtimer@joon.dev</a>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I restore my Pro subscription?</h3>
+                <p>Open the app, go to Settings, and tap "Restore Purchases". Your subscription is tied to your Apple ID and can be restored on any device.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I cancel my subscription?</h3>
+                <p>Subscriptions are managed by Apple. Go to iPhone Settings &gt; your name &gt; Subscriptions, find Boxing Timer, and tap Cancel.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where is my workout data stored?</h3>
+                <p>All workout data is stored locally on your device. We do not have servers or cloud storage. If you delete the app, your workout history will be removed. Workouts saved to Apple Health will remain in the Health app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why aren't my workouts showing in Apple Health?</h3>
+                <p>Make sure you've granted Boxing Timer permission to write to Apple Health. Go to iPhone Settings &gt; Health &gt; Data Access &amp; Devices &gt; Boxing Timer, and enable all categories.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I use Boxing Timer on Apple Watch?</h3>
+                <p>Apple Watch support is planned for a future update. Currently, you can use Live Activity to view your timer on the Lock Screen and Dynamic Island.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The timer doesn't make sound. What should I do?</h3>
+                <p>Boxing Timer works with your phone on silent, but make sure the volume is turned up. In the app, check Settings to ensure your volume level is set above zero. Also verify that Do Not Disturb or Focus mode is not active.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I add the widget to my Home Screen?</h3>
+                <p>Long-press on your Home Screen, tap the "+" button in the top-left corner, search for "Boxing Timer", and choose the widget size you prefer.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">JK Apps</a>
+            <a href="/boxingtimer">Boxing Timer</a>
+            <a href="/boxingtimer/privacy">Privacy Policy</a>
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
