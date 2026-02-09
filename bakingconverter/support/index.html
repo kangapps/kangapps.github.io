@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Baking Converter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #e0e0e0;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header {
+            padding: 48px 0 32px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        header a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        header a:hover { color: #999; }
+        header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 16px;
+        }
+        main { padding: 40px 0; }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            margin: 40px 0 16px;
+        }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 16px; color: #bbb; }
+        .contact-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .contact-card .emoji { font-size: 40px; margin-bottom: 16px; }
+        .contact-card h3 { font-size: 18px; color: #fff; margin-bottom: 8px; }
+        .contact-card a {
+            color: #58a6ff;
+            font-size: 17px;
+        }
+        .faq { margin-top: 40px; }
+        .faq-item {
+            border-bottom: 1px solid #1a1a1a;
+            padding: 20px 0;
+        }
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .faq-item p { margin-bottom: 0; font-size: 15px; }
+        a { color: #58a6ff; }
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
+        footer a:hover { color: #999; }
+        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
+        @media (max-width: 600px) {
+            header { padding: 32px 0 24px; }
+            header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/bakingconverter">&larr; Baking Converter</a>
+            <h1>Support</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-card">
+            <div class="emoji">📧</div>
+            <h3>Get in Touch</h3>
+            <p style="color: #888; margin-bottom: 12px;">Have a question, found a bug, or want to suggest a feature?</p>
+            <a href="mailto:bakingconverter@joon.dev">bakingconverter@joon.dev</a>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I restore my Pro purchase?</h3>
+                <p>Open the app, go to Settings, and tap "Restore Purchases". Your purchase is tied to your Apple ID and can be restored on any device.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is Pro a subscription?</h3>
+                <p>No. Baking Converter Pro is a one-time purchase. Pay once and you own it forever — no recurring charges.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does the app need an internet connection?</h3>
+                <p>No. All ingredient data and conversions are built into the app. It works completely offline — perfect for the kitchen.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why is "Select Ingredient" required for some conversions?</h3>
+                <p>When converting between volume (cups, tablespoons) and weight (grams, ounces), the result depends on the ingredient's density. 1 cup of flour weighs 120g, but 1 cup of sugar weighs 200g. Selecting an ingredient ensures an accurate conversion.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where does the density data come from?</h3>
+                <p>Our ingredient weights are based on the King Arthur Flour weight chart and USDA data, cross-verified for accuracy within 2% tolerance.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I suggest a new ingredient?</h3>
+                <p>Absolutely! Send us an email with the ingredient name and, if you have it, a reliable weight-per-cup source. We add new ingredients in app updates.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does Baking Converter work on iPad?</h3>
+                <p>Yes. The app is fully optimized for both iPhone and iPad with adaptive layouts.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">JK Apps</a>
+            <a href="/bakingconverter">Baking Converter</a>
+            <a href="/bakingconverter/privacy">Privacy Policy</a>
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
