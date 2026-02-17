@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipixel - Pipe Puzzle Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        header .icon {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+        header h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 20px;
+            color: #999;
+        }
+        .features {
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .feature {
+            background: #111;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #222;
+        }
+        .feature .emoji { font-size: 28px; margin-bottom: 12px; }
+        .feature h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+        .feature p { font-size: 14px; color: #888; }
+        .cta {
+            text-align: center;
+            padding: 48px 0;
+        }
+        .cta a {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 16px 48px;
+            border-radius: 14px;
+            transition: opacity 0.2s;
+            margin: 0 8px 12px;
+        }
+        .cta a:hover { opacity: 0.85; }
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
+        footer a:hover { color: #999; }
+        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
+        @media (max-width: 600px) {
+            header { padding: 48px 0 24px; }
+            header h1 { font-size: 28px; }
+            header p { font-size: 16px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="icon">🧩</div>
+            <h1>Pipixel</h1>
+            <p>Connect the pipes, solve the puzzle</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="emoji">🌍</div>
+                <h3>5 Worlds</h3>
+                <p>Explore Garden, Ocean, Cosmos, Jungle, and Volcano — each with unique visuals and increasing difficulty.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">🧠</div>
+                <h3>250 Levels</h3>
+                <p>From easy warm-ups to mind-bending challenges. 50 hand-crafted levels per world.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">⭐</div>
+                <h3>Star Ratings</h3>
+                <p>Earn up to 3 stars per level based on how efficiently you solve each puzzle.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">💡</div>
+                <h3>Hint System</h3>
+                <p>Stuck? Use hints to rotate a pipe to its correct orientation and keep progressing.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">🎵</div>
+                <h3>Relaxing Music</h3>
+                <p>Enjoy calming background tracks while you solve puzzles at your own pace.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">📱</div>
+                <h3>iOS & Android</h3>
+                <p>Available on both platforms. Your progress is stored locally on your device.</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="#">Download on the App Store</a>
+            <a href="#">Get it on Google Play</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">JK Apps</a>
+            <a href="/pipixel/privacy">Privacy Policy</a>
+            <a href="/pipixel/support">Support</a>
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
