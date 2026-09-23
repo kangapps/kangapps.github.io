@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SwitchPower: Mac의 전력 설정을 관리하고 백업하는 무료 메뉴 막대 앱">
+  <title>SwitchPower — 무료 Mac 전력 관리 앱 | JK Apps</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; background: #090b12; color: #f5f7ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.7; }
+    a { color: #a8c7ff; }
+    .wrap { max-width: 900px; margin: auto; padding: 0 24px; }
+    header { padding: 24px 0; border-bottom: 1px solid #293041; }
+    header a { text-decoration: none; }
+    .hero { padding: 72px 0 48px; display: flex; align-items: center; gap: 30px; }
+    .hero img { width: 100px; height: 100px; border-radius: 22px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; margin: 0 0 14px; }
+    h2 { font-size: 1.45rem; margin-top: 0; }
+    p { color: #c8cede; }
+    .tag { color: #a8c7ff; font-weight: 600; }
+    .button { display: inline-block; padding: 12px 20px; border-radius: 10px; background: #a8c7ff; color: #09101d; font-weight: 700; text-decoration: none; }
+    .muted { color: #a8afc1; font-size: .94rem; }
+    section { border-top: 1px solid #293041; padding: 36px 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card { padding: 22px; border-radius: 14px; background: #151a27; }
+    .card h3 { margin: 0 0 8px; }
+    .card p { margin: 0; }
+    li { margin: 8px 0; }
+    footer { border-top: 1px solid #293041; padding: 28px 0 50px; color: #a8afc1; }
+    @media (max-width: 640px) { .hero { display: block; padding-top: 45px; } .hero img { margin-bottom: 20px; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="/">← JK Apps</a></div></header>
+  <main class="wrap">
+    <div class="hero">
+      <img src="icon.png" alt="SwitchPower 앱 아이콘">
+      <div><div class="tag">무료 · macOS 메뉴 막대 앱</div><h1>SwitchPower</h1><p>Mac의 전력 설정을 살펴보고, 용도에 맞는 모드를 적용하고, 이전 설정을 백업해 복원하세요.</p><p class="muted">서명·공증 및 호환성 확인 후 다운로드를 공개합니다.</p></div>
+    </div>
+    <section aria-labelledby="features"><h2 id="features">주요 기능</h2><div class="grid">
+      <div class="card"><h3>전력 모드</h3><p>서버 및 일반 모드의 변경 사항을 미리 보고 적용합니다.</p></div>
+      <div class="card"><h3>백업과 복원</h3><p>현재 전력 설정을 보관하고 이전 상태로 되돌립니다.</p></div>
+      <div class="card"><h3>모니터링</h3><p>전력 상태와 시스템 이벤트를 확인합니다.</p></div>
+      <div class="card"><h3>진단</h3><p>기기와 전력 설정을 확인하고 보고서를 저장합니다.</p></div>
+    </div></section>
+    <section><h2>지원 환경과 제한</h2><p>macOS 13 이상. Apple Silicon과 Intel Mac용 Universal 앱을 준비 중입니다. Intel Mac은 macOS 26까지 지원합니다. macOS 27의 전력 설정 적용은 실제 MacBook에서 검증 중입니다.</p><p>SwitchPower는 시스템 전력 설정을 관리합니다. 배터리 충전 상한을 설정하거나 충전을 중지하는 앱은 아닙니다. 지원되지 않는 설정은 기기별로 건너뜁니다.</p></section>
+    <section><h2>설치와 사용</h2><ol><li>공개된 DMG를 다운로드해 열고 앱을 응용 프로그램 폴더로 복사합니다.</li><li>메뉴 막대에서 SwitchPower를 열고 현재 설정과 미리보기를 확인합니다.</li><li>전력 설정을 적용할 때 macOS가 관리자 인증을 요청합니다. 변경 전 백업을 만들고 문제가 생기면 복원합니다.</li></ol><p>삭제하려면 앱을 종료한 뒤 응용 프로그램 폴더에서 삭제하세요. 로컬 백업은 <code>~/.powermode-backups</code>, 선택적 모니터링 기록은 <code>~/.powermode-monitor.log</code>에 있습니다.</p></section>
+    <section><h2>개인정보</h2><p>현재 앱 코드에는 분석 서비스나 원격 전송 기능이 없습니다. 백업과 모니터링 기록은 Mac에 저장됩니다. 진단 보고서는 사용자가 저장할 때 데스크톱에 기록되며 기기 모델, 호스트 이름 및 전력 설정을 포함할 수 있습니다. 공유 전 내용을 확인하세요.</p></section>
+    <section><h2>라이선스와 문의</h2><p>앱은 <a href="https://github.com/Joonk72/SwitchPower/blob/master/LICENSE">MIT 라이선스</a>로 무료 제공됩니다. 포함된 Yams 라이브러리의 고지는 <a href="https://github.com/Joonk72/SwitchPower/blob/master/THIRD_PARTY_NOTICES/Yams-LICENSE.txt">여기</a>에서 확인할 수 있습니다.</p><p>문제 제보: <a href="https://github.com/Joonk72/SwitchPower/issues">GitHub Issues</a></p><p>버전 기록은 <a href="https://github.com/Joonk72/SwitchPower/releases">GitHub Releases</a>에서 제공합니다.</p></section>
+  </main>
+  <footer><div class="wrap">© 2026 JK Apps</div></footer>
+</body>
+</html>
