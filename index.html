@@ -49,7 +49,9 @@
             transition: border-color 0.2s;
         }
         .app-card:hover { border-color: #444; }
-        .app-card .icon { font-size: 48px; flex-shrink: 0; }
+        .app-card .emoji-icon { width: 80px; height: 80px; display: grid; place-items: center; flex-shrink: 0; }
+        .app-card .boxing-icon { font-size: 60px; }
+        .app-card .bakeweigh-icon, .app-card .pipixel-icon { font-size: 42px; }
         .app-card img.icon { width: 80px; height: 80px; object-fit: contain; border-radius: 18px; }
         .app-card h2 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
         .app-card p { font-size: 14px; color: #888; margin: 0; }
@@ -74,7 +76,9 @@
             header { padding: 48px 0 16px; }
             header h1 { font-size: 28px; }
             .app-card { padding: 20px; gap: 16px; }
-            .app-card .icon { font-size: 40px; }
+            .app-card .emoji-icon { width: 64px; height: 64px; }
+            .app-card .boxing-icon { font-size: 50px; }
+            .app-card .bakeweigh-icon, .app-card .pipixel-icon { font-size: 35px; }
             .app-card img.icon { width: 64px; height: 64px; border-radius: 14px; }
         }
     </style>
@@ -90,7 +94,7 @@
     <main class="container">
         <div class="apps">
             <a class="app-card" href="/boxingtimer">
-                <div class="icon">🥊</div>
+                <div class="emoji-icon boxing-icon" aria-hidden="true">🥊</div>
                 <div>
                     <h2>Boxing Timer</h2>
                     <p>Round timer for boxing, Muay Thai, and combat sports training.</p>
@@ -99,7 +103,7 @@
             </a>
 
             <a class="app-card" href="/bakeweigh">
-                <div class="icon">🧁</div>
+                <div class="emoji-icon bakeweigh-icon" aria-hidden="true">🧁</div>
                 <div>
                     <h2>BakeWeigh</h2>
                     <p>Cups to grams baking converter with ingredient density data.</p>
@@ -108,7 +112,7 @@
             </a>
 
             <a class="app-card" href="/pipixel">
-                <div class="icon">🧩</div>
+                <div class="emoji-icon pipixel-icon" aria-hidden="true">🧩</div>
                 <div>
                     <h2>Pipixel</h2>
                     <p>Pipe puzzle game with 250 levels across 5 colorful worlds.</p>
