@@ -49,7 +49,7 @@
             transition: border-color 0.2s;
         }
         .app-card:hover { border-color: #444; }
-        .app-card .icon { font-size: 48px; flex-shrink: 0; }
+        .app-card .icon { width: 80px; height: 80px; object-fit: contain; flex-shrink: 0; border-radius: 18px; }
         .app-card h2 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
         .app-card p { font-size: 14px; color: #888; margin: 0; }
         .app-card .badge {
@@ -73,7 +73,7 @@
             header { padding: 48px 0 16px; }
             header h1 { font-size: 28px; }
             .app-card { padding: 20px; gap: 16px; }
-            .app-card .icon { font-size: 40px; }
+            .app-card .icon { width: 64px; height: 64px; border-radius: 14px; }
         }
     </style>
 </head>
@@ -116,7 +116,7 @@
             </a>
 
             <a class="app-card" href="/minmi">
-                <div class="icon">🤖</div>
+                <img class="icon" src="/minmi/icon.png" alt="Minmi app icon">
                 <div>
                     <h2>Minmi</h2>
                     <p>Use Siri Chat on your Mac from an iPhone or Android phone.</p>
