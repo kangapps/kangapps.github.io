@@ -21,8 +21,12 @@
             text-align: center;
         }
         header .icon {
-            font-size: 64px;
-            margin-bottom: 24px;
+            display: block;
+            width: 112px;
+            height: 112px;
+            object-fit: cover;
+            border-radius: 24px;
+            margin: 0 auto 24px;
         }
         header h1 {
             font-size: 40px;
@@ -86,7 +90,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="icon">🧩</div>
+            <img class="icon" src="/pipixel/assets/pipixel-icon.png" alt="Pipixel app icon">
             <h1>Pipixel</h1>
             <p>Connect the pipes, solve the puzzle</p>
         </div>
