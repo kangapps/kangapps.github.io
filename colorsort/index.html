@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorSort: Candy Tubes - Color Puzzle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header { padding: 80px 0 40px; text-align: center; }
+        header .icon { font-size: 64px; margin-bottom: 24px; }
+        header h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+        header p { font-size: 20px; color: #999; }
+        .features {
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .feature { background: #111; border-radius: 16px; padding: 24px; border: 1px solid #222; }
+        .feature .emoji { font-size: 28px; margin-bottom: 12px; }
+        .feature h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+        .feature p { font-size: 14px; color: #888; }
+        .cta { text-align: center; padding: 48px 0; }
+        .cta a {
+            display: inline-block; background: #fff; color: #000; text-decoration: none;
+            font-size: 17px; font-weight: 600; padding: 16px 40px; border-radius: 14px;
+            transition: opacity 0.2s; margin: 0 8px 12px;
+        }
+        .cta a:hover { opacity: 0.85; }
+        footer { margin-top: auto; padding: 32px 0; text-align: center; border-top: 1px solid #1a1a1a; }
+        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
+        footer a:hover { color: #999; }
+        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
+        @media (max-width: 600px) {
+            header { padding: 48px 0 24px; }
+            header h1 { font-size: 28px; }
+            header p { font-size: 16px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="icon">🍬</div>
+            <h1>ColorSort: Candy Tubes</h1>
+            <p>Sort colorful candies, one satisfying pour at a time</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="features">
+            <div class="feature">
+                <div class="emoji">🧩</div>
+                <h3>200 Puzzles</h3>
+                <p>Work through 200 carefully arranged levels with a gradually increasing challenge.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">🌈</div>
+                <h3>Simple Color Sorting</h3>
+                <p>Move candies onto a matching color or into an empty tube until every color is sorted.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">↩️</div>
+                <h3>Undo or Restart</h3>
+                <p>Try another move or restart the current puzzle whenever you need to.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">🧪</div>
+                <h3>Optional Bonus Tube</h3>
+                <p>Watch an optional rewarded video to add an extra tube to a puzzle.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">💾</div>
+                <h3>Saved on Your Device</h3>
+                <p>Your level and game progress are saved locally on your device.</p>
+            </div>
+            <div class="feature">
+                <div class="emoji">📱</div>
+                <h3>iOS &amp; Android</h3>
+                <p>Play on iPhone, iPad, or Android. No account is required.</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="/colorsort/support">Support</a>
+            <a href="/colorsort/privacy">Privacy Policy</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">JK Apps</a>
+            <a href="/colorsort/privacy">Privacy Policy</a>
+            <a href="/colorsort/support">Support</a>
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>

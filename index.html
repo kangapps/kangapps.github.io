@@ -51,7 +51,7 @@
         .app-card:hover { border-color: #444; }
         .app-card .emoji-icon { width: 80px; height: 80px; display: grid; place-items: center; flex-shrink: 0; }
         .app-card .boxing-icon { font-size: 60px; }
-        .app-card .bakeweigh-icon, .app-card .pipixel-icon { font-size: 42px; }
+        .app-card .bakeweigh-icon, .app-card .pipixel-icon, .app-card .colorsort-icon { font-size: 42px; }
         .app-card img.icon { width: 80px; height: 80px; object-fit: contain; border-radius: 18px; }
         .app-card h2 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
         .app-card p { font-size: 14px; color: #888; margin: 0; }
@@ -78,7 +78,7 @@
             .app-card { padding: 20px; gap: 16px; }
             .app-card .emoji-icon { width: 64px; height: 64px; }
             .app-card .boxing-icon { font-size: 50px; }
-            .app-card .bakeweigh-icon, .app-card .pipixel-icon { font-size: 35px; }
+            .app-card .bakeweigh-icon, .app-card .pipixel-icon, .app-card .colorsort-icon { font-size: 35px; }
             .app-card img.icon { width: 64px; height: 64px; border-radius: 14px; }
         }
     </style>
@@ -121,7 +121,15 @@
                 </div>
             </a>
 
-            <!-- Future apps go here -->
+            <a class="app-card" href="/colorsort">
+                <div class="emoji-icon colorsort-icon" aria-hidden="true">🍬</div>
+                <div>
+                    <h2>ColorSort: Candy Tubes</h2>
+                    <p>Relaxing color sorting puzzle with 200 levels.</p>
+                    <span class="badge">iOS</span>
+                    <span class="badge">Android</span>
+                </div>
+            </a>
         </div>
     </main>
 
