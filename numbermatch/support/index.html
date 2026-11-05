@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get help with Number Match: rules, hints, saved progress, and ads.">
+    <title>Support - Number Match</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: #000;
+            color: #e0e0e0;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        header { padding: 48px 0 32px; border-bottom: 1px solid #1a1a1a; }
+        header a { color: #666; text-decoration: none; font-size: 14px; }
+        header a:hover { color: #999; }
+        header h1 { font-size: 32px; font-weight: 700; color: #fff; margin-top: 16px; }
+        main { padding: 40px 0; }
+        h2 { font-size: 22px; font-weight: 600; color: #fff; margin: 40px 0 16px; }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 16px; color: #bbb; }
+        .contact-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 16px;
+            padding: 32px;
+            margin: 24px 0 40px;
+            text-align: center;
+        }
+        .contact-card .emoji { font-size: 40px; margin-bottom: 16px; }
+        .contact-card h2 { font-size: 18px; color: #fff; margin: 0 0 8px; }
+        .contact-card p { color: #888; margin-bottom: 12px; }
+        .contact-card a { color: #58a6ff; font-size: 17px; }
+        .faq-item { border-bottom: 1px solid #1a1a1a; padding: 20px 0; }
+        .faq-item h3 { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .faq-item p { margin-bottom: 0; font-size: 15px; }
+        a { color: #58a6ff; }
+        footer {
+            margin-top: auto;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
+        footer a:hover { color: #999; }
+        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
+        @media (max-width: 600px) {
+            header { padding: 32px 0 24px; }
+            header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/numbermatch">&larr; Number Match</a>
+            <h1>Support</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-card" aria-labelledby="contact-heading">
+            <div class="emoji" aria-hidden="true">📧</div>
+            <h2 id="contact-heading">Get in touch</h2>
+            <p>Have a question, found a bug, or want to suggest an improvement?</p>
+            <a href="mailto:joonkn72@gmail.com">joonkn72@gmail.com</a>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently asked questions</h2>
+
+            <div class="faq-item">
+                <h3>How do I clear a pair?</h3>
+                <p>Choose two equal numbers or two numbers that add up to 10. They must connect in the same row or column. Empty cells can be crossed, but a number in the way blocks the connection. Diagonal matches are not allowed.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if no pair is available?</h3>
+                <p>Undo your last move or restart the puzzle. Restarting gives you a fresh start on the same board.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do hints work?</h3>
+                <p>Free hints highlight a pair and explain why it can be removed. When you have used the free hints, you can choose to watch a rewarded ad for an extra hint when one is available. Watching an ad is optional; undo and restart remain available.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does Number Match include ads?</h3>
+                <p>Yes. Number Match includes ads. Rewarded video ads are optional and can provide extra hints. An interstitial ad may appear between eligible puzzles after enough active play time.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Where is my progress stored?</h3>
+                <p>Saved games, records, and puzzle history are stored on your device. Progress is not synced to an account or cloud service. Deleting the app removes locally stored progress.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I delete my game data?</h3>
+                <p>Open Settings and choose Delete game data. This removes saved games, records, and puzzle history from this device. Your app preferences are kept.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="/">JK Apps</a>
+            <a href="/numbermatch">Number Match</a>
+            <a href="/numbermatch/privacy">Privacy Policy</a>
+            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
