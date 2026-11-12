@@ -1,170 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="arcade">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JK Apps</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
-            background: #000;
-            color: #fff;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
-        header {
-            padding: 80px 0 24px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 36px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-        header p {
-            font-size: 18px;
-            color: #888;
-            margin-top: 8px;
-        }
-        .apps {
-            padding: 48px 0;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        .app-card {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            background: #111;
-            border-radius: 16px;
-            padding: 28px;
-            border: 1px solid #222;
-            text-decoration: none;
-            color: #fff;
-            transition: border-color 0.2s;
-        }
-        .app-card:hover { border-color: #444; }
-        .app-card .emoji-icon { width: 80px; height: 80px; display: grid; place-items: center; flex-shrink: 0; }
-        .app-card .boxing-icon { font-size: 60px; }
-        .app-card .bakeweigh-icon, .app-card .pipixel-icon, .app-card .colorsort-icon { font-size: 42px; }
-        .app-card img.icon { width: 80px; height: 80px; object-fit: contain; border-radius: 18px; }
-        .app-card h2 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
-        .app-card p { font-size: 14px; color: #888; margin: 0; }
-        .app-card .badge {
-            display: inline-block;
-            font-size: 11px;
-            font-weight: 600;
-            color: #000;
-            background: #fff;
-            padding: 2px 8px;
-            border-radius: 6px;
-            margin-top: 8px;
-        }
-        footer {
-            margin-top: auto;
-            padding: 32px 0;
-            text-align: center;
-            border-top: 1px solid #1a1a1a;
-        }
-        footer .copy { color: #444; font-size: 13px; }
-        @media (max-width: 600px) {
-            header { padding: 48px 0 16px; }
-            header h1 { font-size: 28px; }
-            .app-card { padding: 20px; gap: 16px; }
-            .app-card .emoji-icon { width: 64px; height: 64px; }
-            .app-card .boxing-icon { font-size: 50px; }
-            .app-card .bakeweigh-icon, .app-card .pipixel-icon, .app-card .colorsort-icon { font-size: 35px; }
-            .app-card img.icon { width: 64px; height: 64px; border-radius: 14px; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Puzzle games and everyday tools from JK Apps.">
+<title>JK Apps — Games and everyday tools</title>
+<script>try{const t=localStorage.getItem('jk-apps-theme');if(t==='studio'||t==='arcade')document.documentElement.dataset.theme=t}catch{}</script>
+    <link rel="stylesheet" href="/assets/site.css">
+    <script src="/assets/site.js" defer>
+</script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>JK Apps</h1>
-            <p>Simple apps, well crafted.</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="apps">
-            <a class="app-card" href="/boxingtimer">
-                <img class="icon" src="/boxingtimer/assets/app-icon.png" alt="Boxing Timer app icon">
-                <div>
-                    <h2>Boxing Timer</h2>
-                    <p>Round timer for boxing, Muay Thai, and combat sports training.</p>
-                    <span class="badge">iOS</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="/bakeweigh">
-                <img class="icon" src="/bakeweigh/assets/app-icon.png" alt="BakeWeigh app icon">
-                <div>
-                    <h2>BakeWeigh</h2>
-                    <p>Cups to grams baking converter with ingredient density data.</p>
-                    <span class="badge">iOS</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="/pipixel">
-                <img class="icon" src="/pipixel/assets/pipixel-icon.png" alt="Pipixel app icon">
-                <div>
-                    <h2>Pipixel</h2>
-                    <p>Pipe puzzle game with 250 levels across 5 colorful worlds.</p>
-                    <span class="badge">iOS</span>
-                    <span class="badge">Android</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="/numbermatch">
-                <img class="icon" src="/numbermatch/assets/numbermatch-icon.png" alt="Number Match app icon">
-                <div>
-                    <h2>Number Match: Pair Puzzle</h2>
-                    <p>Match equal numbers or pairs that add up to 10, and clear the board.</p>
-                    <span class="badge">Coming soon</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="/bloceraze">
-                <img class="icon" src="/bloceraze/assets/app-icon.png" alt="Bloceraze app icon">
-                <div>
-                    <h2>Bloceraze</h2>
-                    <p>Block Puzzle · Erase Lines. Place blocks, clear lines, and build combos.</p>
-                    <span class="badge">iOS</span>
-                    <span class="badge">Coming soon</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="/colorsort">
-                <img class="icon" src="/colorsort/assets/colorsort-icon.png" alt="">
-                <div>
-                    <h2>ColorSort: Candy Tubes</h2>
-                    <p>Relaxing color sorting puzzle with 200 levels.</p>
-                    <span class="badge">iOS</span>
-                    <span class="badge">Android</span>
-                </div>
-            </a>
-
-            <a class="app-card" href="https://minmiai.github.io/">
-                <img class="icon" src="/assets/minmi-icon.png" alt="Minmi app icon">
-                <div>
-                    <h2>Minmi</h2>
-                    <p>A thoughtful AI assistant for macOS.</p>
-                    <span class="badge">macOS</span>
-                </div>
-            </a>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
-        </div>
-    </footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="/">JK<span>Apps</span>
+</a>
+<nav class="site-nav" aria-label="App categories">
+<a href="#games">Games</a>
+<a href="#tools">Everyday tools</a>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+<span class="theme-dot" aria-hidden="true">
+</span>
+<span>Light theme</span>
+<span class="theme-state">Off</span>
+</button>
+</div>
+</header>
+<main id="main" class="wrap">
+<section class="hero" aria-labelledby="hero-title">
+<div>
+<p class="eyebrow">An independent app collection</p>
+<h1 id="hero-title">Games to pick up.<br>Tools to keep close.</h1>
+<p class="hero-copy">Puzzle games and everyday tools, made for a clear purpose and a place in your day.</p>
+</div>
+<div class="hero-showcase" role="group" aria-label="A selection of JK Apps">
+<div class="showcase-app">
+<img src="/pipixel/assets/pipixel-icon.png" alt="">
+<span>Pipixel</span>
+</div>
+<div class="showcase-app">
+<img src="/boxingtimer/assets/app-icon.png" alt="">
+<span>Boxing Timer</span>
+</div>
+<div class="showcase-app">
+<img src="/bakeweigh/assets/app-icon.png" alt="">
+<span>BakeWeigh</span>
+</div>
+<p class="showcase-note">Play · Train · Bake</p>
+</div>
+</section>
+<section class="catalog" aria-labelledby="catalog-title">
+<div class="section-heading">
+<h2 id="catalog-title">Explore the apps</h2>
+</div>
+<section id="games" class="app-group" aria-labelledby="games-title">
+<div class="group-heading">
+<h2 id="games-title">Games</h2>
+<span>4 apps</span>
+</div>
+<div class="app-grid">
+<a class="app-card" href="/pipixel/">
+<img class="app-icon" src="/pipixel/assets/pipixel-icon.png" alt="" loading="lazy">
+<span class="app-category">Games</span>
+<h3>Pipixel</h3>
+<p>Connect pipes to solve puzzles across five worlds and 250 levels.</p>
+<span class="app-meta">
+<span>iOS and Android</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+<a class="app-card" href="/numbermatch/">
+<img class="app-icon" src="/numbermatch/assets/numbermatch-icon.png" alt="" loading="lazy">
+<span class="app-category">Games</span>
+<h3>Number Match: Pair Puzzle</h3>
+<p>Match equal numbers or pairs that add up to ten, then clear the board.</p>
+<span class="app-meta">
+<span>Coming soon to iOS and Android</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+<a class="app-card" href="/bloceraze/">
+<img class="app-icon" src="/bloceraze/assets/app-icon.png" alt="" loading="lazy">
+<span class="app-category">Games</span>
+<h3>Bloceraze</h3>
+<p>Place blocks, clear lines, and build combos.</p>
+<span class="app-meta">
+<span>Coming soon to iPhone</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+<a class="app-card" href="/colorsort/">
+<img class="app-icon" src="/colorsort/assets/colorsort-icon.png" alt="" loading="lazy">
+<span class="app-category">Games</span>
+<h3>ColorSort: Candy Tubes</h3>
+<p>Sort colorful candies, one satisfying pour at a time.</p>
+<span class="app-meta">
+<span>iOS and Android</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+</div>
+</section>
+<section id="tools" class="app-group" aria-labelledby="tools-title">
+<div class="group-heading">
+<h2 id="tools-title">Everyday tools</h2>
+<span>3 apps</span>
+</div>
+<div class="app-grid">
+<a class="app-card" href="/boxingtimer/">
+<img class="app-icon" src="/boxingtimer/assets/app-icon.png" alt="" loading="lazy">
+<span class="app-category">Everyday tools</span>
+<h3>Boxing Timer</h3>
+<p>Set rounds and rest intervals for boxing, Muay Thai, and combat sports training.</p>
+<span class="app-meta">
+<span>iOS</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+<a class="app-card" href="/bakeweigh/">
+<img class="app-icon" src="/bakeweigh/assets/app-icon.png" alt="" loading="lazy">
+<span class="app-category">Everyday tools</span>
+<h3>BakeWeigh</h3>
+<p>Convert baking measurements by ingredient, then scale a recipe to fit.</p>
+<span class="app-meta">
+<span>iOS</span>
+<span class="card-action">Details →</span>
+</span>
+</a>
+<a class="app-card" href="https://minmiai.github.io/">
+<img class="app-icon" src="/assets/minmi-icon.png" alt="" loading="lazy">
+<span class="app-category">Everyday tools</span>
+<h3>Minmi</h3>
+<p>A thoughtful AI assistant for macOS.</p>
+<span class="app-meta">
+<span>macOS</span>
+<span class="card-action">External site ↗</span>
+</span>
+</a>
+</div>
+</section>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<span>© 2026 JK Apps</span>
+<a href="mailto:joonkn72@gmail.com">Contact</a>
+</div>
+</footer>
 </body>
 </html>

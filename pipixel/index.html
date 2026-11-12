@@ -1,149 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="arcade">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pipixel - Pipe Puzzle Game</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
-            background: #000;
-            color: #fff;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; width: 100%; }
-        header {
-            padding: 80px 0 40px;
-            text-align: center;
-        }
-        header .icon {
-            display: block;
-            width: 112px;
-            height: 112px;
-            object-fit: cover;
-            border-radius: 24px;
-            margin: 0 auto 24px;
-        }
-        header h1 {
-            font-size: 40px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin-bottom: 8px;
-        }
-        header p {
-            font-size: 20px;
-            color: #999;
-        }
-        .features {
-            padding: 40px 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .feature {
-            background: #111;
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid #222;
-        }
-        .feature .emoji { font-size: 28px; margin-bottom: 12px; }
-        .feature h3 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
-        .feature p { font-size: 14px; color: #888; }
-        .cta {
-            text-align: center;
-            padding: 48px 0;
-        }
-        .cta a {
-            display: inline-block;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 600;
-            padding: 16px 48px;
-            border-radius: 14px;
-            transition: opacity 0.2s;
-            margin: 0 8px 12px;
-        }
-        .cta a:hover { opacity: 0.85; }
-        footer {
-            margin-top: auto;
-            padding: 32px 0;
-            text-align: center;
-            border-top: 1px solid #1a1a1a;
-        }
-        footer a { color: #666; text-decoration: none; font-size: 14px; margin: 0 16px; }
-        footer a:hover { color: #999; }
-        footer .copy { color: #444; font-size: 13px; margin-top: 16px; }
-        @media (max-width: 600px) {
-            header { padding: 48px 0 24px; }
-            header h1 { font-size: 28px; }
-            header p { font-size: 16px; }
-            .features { grid-template-columns: 1fr; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Connect pipes to solve puzzles across five worlds and 250 levels.">
+<title>Pipixel — JK Apps</title>
+<script>try{const t=localStorage.getItem('jk-apps-theme');if(t==='studio'||t==='arcade')document.documentElement.dataset.theme=t}catch{}</script>
+    <link rel="stylesheet" href="/assets/site.css">
+    <script src="/assets/site.js" defer>
+</script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img class="icon" src="/pipixel/assets/pipixel-icon.png" alt="Pipixel app icon">
-            <h1>Pipixel</h1>
-            <p>Connect the pipes, solve the puzzle</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="features">
-            <div class="feature">
-                <div class="emoji">🌍</div>
-                <h3>5 Worlds</h3>
-                <p>Explore Garden, Ocean, Cosmos, Jungle, and Volcano — each with unique visuals and increasing difficulty.</p>
-            </div>
-            <div class="feature">
-                <div class="emoji">🧠</div>
-                <h3>250 Levels</h3>
-                <p>From easy warm-ups to mind-bending challenges. 50 hand-crafted levels per world.</p>
-            </div>
-            <div class="feature">
-                <div class="emoji">⭐</div>
-                <h3>Star Ratings</h3>
-                <p>Earn up to 3 stars per level based on how efficiently you solve each puzzle.</p>
-            </div>
-            <div class="feature">
-                <div class="emoji">💡</div>
-                <h3>Hint System</h3>
-                <p>Stuck? Use hints to rotate a pipe to its correct orientation and keep progressing.</p>
-            </div>
-            <div class="feature">
-                <div class="emoji">🎵</div>
-                <h3>Relaxing Music</h3>
-                <p>Enjoy calming background tracks while you solve puzzles at your own pace.</p>
-            </div>
-            <div class="feature">
-                <div class="emoji">📱</div>
-                <h3>iOS & Android</h3>
-                <p>Available on both platforms. Your progress is stored locally on your device.</p>
-            </div>
-        </div>
-
-        <div class="cta">
-            <!-- TODO: Update Apple ID after App Store submission -->
-            <a href="https://apps.apple.com/app/pipixel">Download on the App Store</a>
-            <a href="https://play.google.com/store/apps/details?id=com.pipixel.app">Get it on Google Play</a>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <a href="/">JK Apps</a>
-            <a href="/pipixel/privacy">Privacy Policy</a>
-            <a href="/pipixel/support">Support</a>
-            <div class="copy">&copy; 2026 JK Apps. All rights reserved.</div>
-        </div>
-    </footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a class="brand" href="/">JK<span>Apps</span>
+</a>
+<nav class="site-nav" aria-label="App categories">
+<a href="/#games">Games</a>
+<a href="/#tools">Everyday tools</a>
+</nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+<span class="theme-dot" aria-hidden="true">
+</span>
+<span>Light theme</span>
+<span class="theme-state">Off</span>
+</button>
+</div>
+</header>
+<main id="main" class="detail-main">
+<div class="wrap detail-wrap">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb">
+<a href="/">All apps</a>
+<span aria-hidden="true">/</span>
+<span>Games</span>
+</nav>
+<section class="detail-hero" aria-labelledby="app-title">
+<div class="detail-intro">
+<p class="eyebrow">Games</p>
+<h1 id="app-title">Pipixel</h1>
+<p class="detail-lead">Connect pipes to solve puzzles across five worlds and 250 levels.</p>
+<div class="detail-meta">
+<span>iOS and Android</span>
+</div>
+<div class="detail-actions">
+<a class="action-link primary" href="https://apps.apple.com/app/pipixel">App Store <span aria-hidden="true">↗</span>
+</a>
+<a class="action-link primary" href="https://play.google.com/store/apps/details?id=com.pipixel.app">Google Play <span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+<figure class="detail-art">
+<img src="/pipixel/assets/pipixel-icon.png" alt="">
+<figcaption>
+<span>Pipe puzzle</span>
+</figcaption>
+</figure>
+</section>
+<section class="features-section" aria-labelledby="features-title">
+<h2 id="features-title">What it does</h2>
+<div class="feature-list">
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">01</span>
+<div>
+<h3>Five worlds</h3>
+<p>Explore Garden, Ocean, Cosmos, Jungle, and Volcano, each with distinct visuals and increasing difficulty.</p>
+</div>
+</article>
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">02</span>
+<div>
+<h3>250 levels</h3>
+<p>Play 50 hand-crafted levels in each world.</p>
+</div>
+</article>
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">03</span>
+<div>
+<h3>Star ratings</h3>
+<p>Earn up to three stars per level based on how efficiently you solve each puzzle.</p>
+</div>
+</article>
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">04</span>
+<div>
+<h3>Hints</h3>
+<p>Use hints to rotate a pipe to its correct orientation.</p>
+</div>
+</article>
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">05</span>
+<div>
+<h3>Background music</h3>
+<p>Listen to background tracks while solving puzzles at your own pace.</p>
+</div>
+</article>
+<article class="feature-item">
+<span class="feature-number" aria-hidden="true">06</span>
+<div>
+<h3>Local progress</h3>
+<p>Your progress is stored on your device.</p>
+</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrap detail-footer">
+<span>© 2026 JK Apps</span>
+<nav aria-label="Pipixel links">
+<a href="/pipixel/support/">Support</a>
+<a href="/pipixel/privacy/">Privacy</a>
+<a href="/">All apps</a>
+</nav>
+</div>
+</footer>
 </body>
 </html>
